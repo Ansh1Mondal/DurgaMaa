@@ -3,7 +3,16 @@ body{
 }
 .container{
     margin-top: 10rem;
+    animation: down 20s;
+    animation-delay: 2s;
+    transition: all;
 }
+@keyframes down {
+    100%{
+        transform: translateY(800px);
+    }
+}
+
 .container h1{
     text-align: center;
     margin-top: -12%;
@@ -623,4 +632,115 @@ body{
     border: 2px solid black;
     border-radius: 50%;
     background-color: red;
+}
+.water{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    position: absolute;
+    margin-top: 5rem;
+    animation: up 20s;
+}
+.water1{
+    width: 30rem;
+    height: 30rem;
+    background-color: rgba(0, 255, 255, 0.558);
+    border-radius: 13rem;
+    margin-left: -8rem;
+    /* margin-top: -5rem; */
+    transition: all 0.5s;
+    transform: rotate(45deg);
+    animation: rot1 infinite 2s;
+}
+.water2{
+    width: 30rem;
+    height: 30rem;
+    background-color: rgba(0, 255, 255, 0.558);
+    border-radius: 13rem;
+    margin-left: -8rem;
+    /* margin-top: -5rem; */
+    transition: all 0.5s;
+    transform: rotate(35deg);
+    animation: rot2 infinite 2.5s;
+}
+.water3{
+    width: 30rem;
+    height: 30rem;
+    background-color: rgba(0, 255, 255, 0.558);
+    border-radius: 13rem;
+    margin-left: -8rem;
+    /* margin-top: -5rem; */
+    transition: all 0.5s;
+    transform: rotate(25deg);
+    animation: rot3 infinite 2s;
+}
+.water4{
+    width: 30rem;
+    height: 30rem;
+    background-color: rgba(0, 255, 255, 0.558);
+    border-radius: 13rem;
+    margin-left: -8rem;
+    /* margin-top: -5rem; */
+    transition: all 0.5s;
+    transform: rotate(15deg);
+    animation: rot4 infinite 2.5s;
+}
+.water5{
+    width: 30rem;
+    height: 30rem;
+    background-color: rgba(0, 255, 255, 0.558);
+    border-radius: 13rem;
+    margin-left: -8rem;
+    /* margin-top: -5rem; */
+    transition: all ;
+    transform: rotate(5deg);
+    animation: rot5 infinite 2s;
+}
+
+@keyframes rot1{
+    100%{transform: rotate(225deg);}
+}
+@keyframes rot2{
+    100%{transform: rotate(215deg);}
+}
+@keyframes rot3{
+    100%{transform: rotate(205deg);}
+}
+@keyframes rot4{
+    100%{transform: rotate(195deg);}
+}
+@keyframes rot5{
+    100%{transform: rotate(185deg);}
+}
+.waterBack{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: -10rem;
+    animation: up 20s;
+}
+
+@keyframes up{
+    100% {transform: translateY(-15rem);}
+}
+.lastHeading h1{
+    position: absolute;
+    text-align: center;
+    margin-top: -50%;
+    margin-left: 30%;
+    padding: 1.5rem;
+    /* font-size: 40px; */
+    /* font-family: 'Advent Pro'; */
+    font-family: 'Tangerine', cursive;
+    font-size: 8rem;
+    color: maroon;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    animation: headDown 8s;
+    animation-delay: 10s;
+}
+
+@keyframes headDown {
+    from {margin-top: -50%;}
+    to {margin-top: -20%;}
 }
